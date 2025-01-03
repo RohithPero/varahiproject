@@ -57,11 +57,11 @@ const Albums = () => {
   };
 
   return (
-    <Container className="album-container m-5 p-5">
-      <Row className="g-5">
-        <Col sm={12} md={6} lg={2}>
+    <Container className="album-container my-5 py-5 d-flex flex-column align-items-center justify-content-center">
+      <Row className="g-5 justify-content-center text-center w-100">
+        <Col sm={12} md={6} lg={2} className="d-flex justify-content-center">
           <div
-            className="wild"
+            className="wild text-center"
             onClick={() => handleClassClick('wild')}
             style={{ cursor: 'pointer' }}
           >
@@ -69,9 +69,9 @@ const Albums = () => {
             <div className="hover-wild"></div>
           </div>
         </Col>
-        <Col sm={12} md={6} lg={2}>
+        <Col sm={12} md={6} lg={2} className="d-flex justify-content-center">
           <div
-            className="baby"
+            className="baby text-center"
             onClick={() => handleClassClick('baby')}
             style={{ cursor: 'pointer' }}
           >
@@ -79,9 +79,9 @@ const Albums = () => {
             <div className="hover-baby"></div>
           </div>
         </Col>
-        <Col sm={12} md={6} lg={2}>
+        <Col sm={12} md={6} lg={2} className="d-flex justify-content-center">
           <div
-            className="wedding"
+            className="wedding text-center"
             onClick={() => handleClassClick('wedding')}
             style={{ cursor: 'pointer' }}
           >
@@ -89,9 +89,9 @@ const Albums = () => {
             <div className="hover-wedding"></div>
           </div>
         </Col>
-        <Col sm={12} md={6} lg={2}>
+        <Col sm={12} md={6} lg={2} className="d-flex justify-content-center">
           <div
-            className="model"
+            className="model text-center"
             onClick={() => handleClassClick('model')}
             style={{ cursor: 'pointer' }}
           >
@@ -99,9 +99,9 @@ const Albums = () => {
             <div className="hover-model"></div>
           </div>
         </Col>
-        <Col sm={12} md={6} lg={2}>
+        <Col sm={12} md={6} lg={2} className="d-flex justify-content-center">
           <div
-            className="other"
+            className="other text-center"
             onClick={() => handleClassClick('other')}
             style={{ cursor: 'pointer' }}
           >
@@ -117,9 +117,9 @@ const Albums = () => {
           <Modal.Title>{category.charAt(0).toUpperCase() + category.slice(1)} Gallery</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row>
+          <Row className="justify-content-center">
             {galleryImages.map((image, index) => (
-              <Col xs={12} sm={4} md={4} lg={2} key={index} className="mb-3">
+              <Col xs={6} sm={4} md={3} lg={2} key={index} className="mb-3 d-flex justify-content-center">
                 <img
                   src={image}
                   alt={`${category}-${index}`}
