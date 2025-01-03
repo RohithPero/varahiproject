@@ -65,7 +65,7 @@ const BookAppointment = () => {
           width: '100%',
           boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.2)',
           color: '#fff', // White text color inside the form
-          marginTop: '-170px',
+          marginTop: '-100px',
           position: 'relative',
         }}
       >
