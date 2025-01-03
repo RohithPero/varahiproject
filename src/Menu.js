@@ -25,7 +25,7 @@ const Menu = () => {
           aria-label="Go to homepage"
         >
           <img src={photo} alt='logo' className='ii' />
-          <span className='me'>VARAHI PHOTOGRAPHY</span>
+          <span className='me'>VARAHI PHOTOGRAPH</span>
         </button>
 
         <button
