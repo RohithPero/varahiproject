@@ -1,0 +1,194 @@
+/* .backgroundimage{
+  background-image: url('back5.jpg');
+ 
+  background-size: 100% auto; 
+  background-repeat: repeat-y; 
+  background-position: top center; 
+
+ background-size: cover;
+ height: 100vh;
+
+  margin-top: 0%;
+ position:absolute; 
+  width: 100%;  
+ 
+
+} */
+
+.backgroundimage{
+  /* position:absolute; 
+  background-image: url('back5.jpg');
+  background-size:cover;
+ 
+  width: 100%;
+  height: 100%; */
+position: absolute;
+  background-image: url('./images/backgroundimage/back5.jpg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  min-height: 100vh; /* Ensures the background extends to the full height of the viewport */
+  width: 100%; /* Ensures it spans the full width */
+}
+
+.q{
+  margin-left: 60%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.my{
+  margin-left: 60%;
+  font-family: cursive;
+}
+.navbar{
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 15px;
+  /* background-color: #bbbaba;
+   */
+  /* border:#333333 solid; */
+   
+
+}
+
+.nav-item{
+  color: #0e0e0e;
+}
+
+
+
+.navbar-brand{
+  
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 36px; 
+  
+  
+}
+
+.appointment,.about,.contact{
+  background-color: #FFFFFF;
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 15px;
+}
+
+.wild , .baby , .wedding , .model , .other{
+  width: 250px;
+  height: 350px;
+  /* background-image:  url("wild.WEBP"); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid white;
+  transform-style: preserve-3d;
+}
+.wild{
+  background-image:  url("./images/wild/02.jpg")
+  
+}
+.baby{
+  background-image:  url("./images/baby/baby.png")
+}
+.wedding{
+  background-image:  url("./images//wedding/DSC07382\ copy\ 2.jpg")
+}
+.model{
+  background-image:  url("./images/model/846110\ copy.jpg")
+}
+.other{
+  background-image:  url("./images/other/other.png")
+}
+
+.wild h1 , .baby h1 , .wedding h1 , .model h1 , .other h1{
+  display: none;
+  color: rgb(17, 16, 16);
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.hover-wild , .hover-baby , .hover-wedding , .hover-model ,.hover-other{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('wild-hover.png'); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+}
+
+.hover-wild{
+  background-image:  url("./images/hover/wild-hover.png")
+}
+.hover-baby{
+  background-image:  url("./images/hover/babySt.png")
+}
+.hover-wedding{
+  background-image:  url("./images/hover/wedding-hover.png")
+}
+.hover-model{
+  background-image:  url("./images/hover/model-hover.png")
+}
+.hover-other{
+  background-image:  url("./images/hover/other-hover.png")
+}
+
+.wild:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./images/wild/02.jpg");
+}
+.baby:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./images/baby/baby.png");
+
+}
+.wedding:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./images//wedding/DSC07382\ copy\ 2.jpg");
+
+}
+.model:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./images/model/846110\ copy.jpg");
+
+}
+.other:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./images/other/other.png");
+
+}
+
+.wild:hover .hover-wild , .baby:hover .hover-baby , .wedding:hover .hover-wedding , .model:hover .hover-model , .other:hover .hover-other{ 
+  top: 35%; 
+  opacity: 1;
+}
+
+.wild:hover h1 , .baby:hover h1 , .wedding:hover h1 ,.model:hover h1  , .other:hover h1{
+  display: block;
+  font-size: 30px;
+ color:#FFFFFF;
+}
+
+
+.album-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.ii{
+  height: 120px;
+  width: 150px;
+}
+
+.me{
+  position: relative;
+  top: 15px;
+  
+}
