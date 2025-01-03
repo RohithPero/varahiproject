@@ -32,7 +32,7 @@ const Menu = () => {
           className="navbar-toggler"
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          style={{ position: 'absolute', right: '10px' }}
+          style={{ position: 'absolute', right: '10px', top:'5px' }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
